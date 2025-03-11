@@ -4,7 +4,7 @@ body {
     background-color: #f5f5f5;
   }
   
-  .login-container {
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
   }
   
-  .login-form {
+  .form {
     width: 100%;
     max-width: 400px;
     padding: 20px;
@@ -23,7 +23,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .login-form h2 {
+  .form h2 {
     text-align: center;
     margin-bottom: 20px;
   }
@@ -44,7 +44,7 @@ body {
     border-radius: 5px;
   }
   
-  .login-button {
+  .button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -55,12 +55,12 @@ body {
     font-size: 16px;
   }
   
-  .login-button:hover {
+  .button:hover {
     background-color: #0056b3;
   }
   
   @media (max-width: 600px) {
-    .login-form {
+    .form {
       padding: 15px;
     }
   
@@ -68,7 +68,7 @@ body {
       padding: 6px;
     }
   
-    .login-button {
+    .button {
       padding: 8px;
       font-size: 14px;
     }
