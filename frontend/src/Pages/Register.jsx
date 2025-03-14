@@ -3,22 +3,32 @@ import Login from './Login'
 
 export default function Register() {
   return (
-    <div className="container">
-      <form className="form" action={Login}>
-        <h2>Register</h2>
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" required />
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+      <form className="w-full max-w-md bg-white p-6 rounded-lg shadow-md" action={Login}>
+        <h2 className="text-center text-2xl font-semibold mb-4">Register</h2>
+        
+        <div className="form-control mb-4">
+          <label className="label" htmlFor="name">
+            <span className="label-text">Name:</span>
+          </label>
+          <input type="text" id="name" className="input input-bordered w-full" required />
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" required />
+        
+        <div className="form-control mb-4">
+          <label className="label" htmlFor="email">
+            <span className="label-text">Email:</span>
+          </label>
+          <input type="email" id="email" className="input input-bordered w-full" required />
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" required />
+        
+        <div className="form-control mb-4">
+          <label className="label" htmlFor="password">
+            <span className="label-text">Password:</span>
+          </label>
+          <input type="password" id="password" className="input input-bordered w-full" required />
         </div>
-        <button type="submit" className="button">Register</button>
+        
+        <button type="submit" className="btn btn-primary w-full">Register</button>
       </form>
     </div>
   )
