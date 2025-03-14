@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from './NavBar';
 
 import Register from './Register';
 
 const Login = () => {
   return (
+    <>
+    <Navbar/>
     <div className="flex justify-center items-center h-screen bg-base-200 p-4">
       <form className="w-full max-w-md bg-white shadow-lg rounded-lg p-6" method='get' action={Register}>
         <h2 className="text-2xl font-bold text-center mb-4">Login</h2>
@@ -37,6 +40,7 @@ const Login = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

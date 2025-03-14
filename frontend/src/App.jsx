@@ -1,15 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Navbar from './Pages/NavBar';
+import ImageSlider from './Pages/ImageSlider';
 const App = () => {
   return (
-    <>
-       <Navbar/>
-      {/* <Register /> */}
-      <Login />
-     
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+      
+      <Route path="/Login" element={<Login />} />
+      <Route path="/Register" element={<ImageSlider />} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -107,7 +107,9 @@
 
 // export default Navbar;
 
-import React from 'react';
+import React from 'react';  
+import { Link } from 'react-router-dom';
+import Login from './Login';
 
 function Navbar() {
     const navItems = (
@@ -169,7 +171,8 @@ function Navbar() {
                     </label>
 
                     <div className="hidden lg:block">
-                        <a className="btn bg-black text-white ml-3 rounded-md hover:bg-slate-800">Login</a>
+                        {/* <a className="btn bg-black text-white ml-3 rounded-md hover:bg-slate-800" >Login</a> */}
+                        <Link to="/Login" className="btn bg-black text-white ml-3 rounded-md hover:bg-slate-800">Login</Link>
                     </div>
                 </div>
             </div>
