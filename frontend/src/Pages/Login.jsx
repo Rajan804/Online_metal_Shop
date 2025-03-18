@@ -40,7 +40,7 @@ const Login = () => {
         </button>
         <p className='mt-3 flex items-center justify-center'>
           I have not account? &nbsp; 
-          <Link to={"/register"} className='text-pink-700 underline font-semibold '>SignUp</Link>
+          <Link to={"/register"} className='text-blue-900 underline font-semibold '>SignUp</Link>
         </p>
       </form>
     </div>

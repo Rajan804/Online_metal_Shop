@@ -31,8 +31,8 @@ export default function Register() {
         
         <button type="submit" className="btn btn-primary w-full">Register</button>
         <p className='mt-3 flex items-center justify-center'>
-          I have an account 
-          <Link to={"/login"} className='text-pink-700 underline font-semibold'>Login</Link>
+          I have an account? &nbsp;
+          <Link to={"/login"} className='text-blue-900 underline font-semibold'>Login</Link>
         </p>
       </form>
     </div>
