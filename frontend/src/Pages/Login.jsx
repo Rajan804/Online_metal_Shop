@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './NavBar';
+import { Link } from 'react-router-dom';
 
 import Register from './Register';
 
@@ -34,10 +35,13 @@ const Login = () => {
             className="input input-bordered w-full" 
           />
         </div>
-        
         <button type="submit" className="btn btn-primary w-full">
           Login
         </button>
+        <p className='mt-3 flex items-center justify-center'>
+          I have not account? &nbsp; 
+          <Link to={"/register"} className='text-pink-700 underline font-semibold '>SignUp</Link>
+        </p>
       </form>
     </div>
     </>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Login from './Login'
+import { Link } from 'react-router-dom'
 
 export default function Register() {
   return (
@@ -29,6 +30,10 @@ export default function Register() {
         </div>
         
         <button type="submit" className="btn btn-primary w-full">Register</button>
+        <p className='mt-3 flex items-center justify-center'>
+          I have an account 
+          <Link to={"/login"} className='text-pink-700 underline font-semibold'>Login</Link>
+        </p>
       </form>
     </div>
   )

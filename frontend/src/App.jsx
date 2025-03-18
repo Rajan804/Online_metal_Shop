@@ -6,14 +6,13 @@ import Navbar from './Pages/NavBar';
 import ImageSlider from './Pages/ImageSlider';
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
-      
-      <Route path="/Login" element={<Login />} />
-      <Route path="/Register" element={<ImageSlider />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 
