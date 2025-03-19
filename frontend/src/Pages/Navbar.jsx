@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     const navItems = (
         <>
-            <li><a href="#">Home</a></li>
+            <li><Link to={"/home"}>Home</Link></li>
             <li><a href="#">Course</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
